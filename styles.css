@@ -531,12 +531,28 @@ nav ul li a:hover {
     padding: 0 20px;
   }
 
-  .nav-left ul li:not(:first-child) {
-    display: none;
+  /* Global mobile section padding */
+  section {
+    padding: 5.5rem 5rem;
+  }
+
+  /* Mobile navbar adjustments */
+  nav {
+    padding: 0 2rem;
+    justify-content: center;
+  }
+
+  .nav-left ul li a {
+    font-size: 1rem;
   }
 
   .nav-right {
     display: none;
+  }
+
+  .razi {
+    font-size: 1.3rem;
+    margin-right: 1rem;
   }
 
   .intro {
@@ -560,5 +576,59 @@ nav ul li a:hover {
   .intro-photo {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  /* Education section mobile adjustments */
+  .about-content {
+    flex-direction: column;
+    padding: 0;
+    gap: 30px;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .skills-and-awards {
+    flex-direction: column;
+    padding: 60px 0 0;
+    gap: 40px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Projects section mobile adjustments */
+  .projects-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0;
+  }
+
+  /* Writings section mobile adjustments */
+  .writing-item p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .writing-item h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Connect section mobile adjustments */
+  .connect-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .connect-links {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .connect-item {
+    min-width: 60px;
   }
 }
