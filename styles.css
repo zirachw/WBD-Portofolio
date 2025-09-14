@@ -34,7 +34,7 @@ h3 {
 
 h4 {
   color: #000000;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
@@ -514,29 +514,21 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-/*  Desktop Size */
-@media (min-width: 1024x) {
-  nav ul {
-    display: block; /* Menu visible on desktop */
-  }
-
-  .hamburger {
-    display: none; /* Hide hamburger on desktop */
-  }
-}
-
-/* Tablet/Mobile Size */
+/* Responsive */
 @media (max-width: 1024px) {
   .container {
     padding: 0 20px;
   }
 
-  /* Global mobile section padding */
   section {
     padding: 5.5rem 5rem;
   }
 
-  /* Mobile navbar adjustments */
+  body {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
   nav {
     padding: 0 2rem;
     justify-content: center;
@@ -578,7 +570,6 @@ nav ul li a:hover {
     margin-bottom: 30px;
   }
 
-  /* Education section mobile adjustments */
   .about-content {
     flex-direction: column;
     padding: 0;
@@ -600,27 +591,14 @@ nav ul li a:hover {
     gap: 20px;
   }
 
-  /* Projects section mobile adjustments */
   .projects-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 0;
   }
 
-  /* Writings section mobile adjustments */
-  .writing-item p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
   .writing-item h3 {
     font-size: 1.1rem;
-  }
-
-  /* Connect section mobile adjustments */
-  .connect-content p {
-    font-size: 0.9rem;
-    line-height: 1.4;
   }
 
   .connect-links {
