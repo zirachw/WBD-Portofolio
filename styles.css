@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lora", serif;
+  line-height: 1.5;
+  color: #666;
+}
+
+section {
+  padding: 5.5rem 10rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #000000;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+h3 {
+  color: #000000;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: #000000;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.centered {
+  text-align: center;
+}
+
+.tags {
+  font-family: "Inter";
+  font-size: 0.85rem;
+  color: #333;
+  padding: 4px 12px;
+  margin: 0;
+  line-height: 1.4;
+  display: inline-block;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+}
+
+header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background-color: #f8f8f8;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #4c4c4c;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #000000;
+}
+
+.nav-left ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.razi {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5rem;
+}
+
+.intro-text {
+  text-align: left;
+}
+
+.intro-text p {
+  margin-bottom: 2.5rem;
+}
+
+.intro-text a {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.intro-text img {
+  width: 40px;
+  height: 40px;
+}
+
+.intro-text .role {
+  font-family: "Inter";
+  margin-bottom: 30px;
+}
+
+.location {
+  font-family: "Inter";
+  margin-bottom: 1rem;
+}
+
+.flag {
+  margin-right: 1rem;
+}
+
+.highlight {
+  color: #000000;
+  font-weight: bold;
+}
+
+.intro-photo {
+  text-align: right;
+}
+
+.photo-grid {
+  display: flex;
+  gap: 12px;
+  width: 450px;
+}
+
+.photo-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.photo-portrait {
+  height: 287px;
+}
+
+.photo-landscape {
+  height: 121px;
+}
+
+.about-content {
+  display: flex;
+  padding: 0 40px;
+  gap: 60px;
+}
+
+.about-image {
+  position: relative;
+  width: 400px;
+  height: auto;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: brightness(0.6);
+}
+
+.about-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: "Inter";
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.institution-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.year-range {
+  margin: 0 0 1rem 0;
+}
+
+.degree {
+  margin: 0 0 1rem 0;
+}
+
+.skills-and-awards {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px 0;
+  display: flex;
+  gap: 60px;
+}
+
+.skills-section {
+  flex: 2;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.awards-section {
+  flex: 1;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.award-item {
+  border-left: 3px solid #333;
+  padding-left: 20px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.experience-item {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.experience-type {
+  flex-shrink: 0;
+  width: 150px;
+  text-align: right;
+}
+
+.location {
+  font-family: "Inter";
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.projects-item {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.projects-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  padding: 20px;
+}
+
+.projects-title {
+  font-size: 1.2rem;
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+.project-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-tech-tag {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: "Inter";
+  font-size: 0.65rem;
+  padding: 3px 6px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.project-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-btn {
+  font-family: "Fira Code";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #666;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.project-btn:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+
+.project-btn.private {
+  background-color: #999;
+  cursor: default;
+}
+
+.project-btn.private:hover {
+  background-color: #999;
+  transform: none;
+}
+
+.writings-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.writings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.writing-item {
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.writing-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 20px 0;
+}
+
+.writing-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.writing-links {
+  display: flex;
+  gap: 15px;
+}
+
+.writing-link {
+  font-family: "Inter";
+  font-size: 0.9rem;
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.writing-link:hover {
+  text-decoration: underline;
+}
+
+.redirect-button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 28px;
+  background-color: white;
+  color: #333;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+.redirect-button:hover {
+  background-color: #f8f8f8;
+}
+
+#connect {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+}
+
+.connect-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.connect-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  margin-top: 5rem;
+}
+
+.connect-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 80px;
+}
+
+.connect-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  Desktop Size */
+@media (min-width: 1024x) {
+  nav ul {
+    display: block; /* Menu visible on desktop */
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger on desktop */
+  }
+}
+
+/* Tablet/Mobile Size */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .nav-left ul li:not(:first-child) {
+    display: none;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro-text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .intro-text p {
+    font-size: 1.5rem;
+  }
+
+  .intro-text img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .intro-photo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
